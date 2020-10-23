@@ -2,16 +2,25 @@ package com.learn.dataStructure.D3stack;
 
 import org.springframework.util.StringUtils;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.*;
 
 /**
  * @author yds
  * @title: S9StackCalculate
- * @description: 中缀表达式
+ * @description: 中缀表达式 使用栈实现计算器
+ *
+ * 该案例只是介绍 使用栈实现计算机的思想，如有需要，自行完善
+ *
+ * 已实现功能：
+ * 1.数据格式化
+ * 2.数据校验
+ * 2.多位数处理
+ *
+ * 待完善功能：TODO
+ * 1.小数点问题
+ * 2.括号问题
+ *
+ * 实现逻辑如下：
  * 1.创建两个栈:一个数值栈 一个操作符栈
  * 2.从左向右遍历
  * 3.数据入栈
@@ -19,144 +28,191 @@ import java.util.regex.Pattern;
  *  3.2)遇到操作符
  *      3.2.1)操作符栈为空,则直接入数值栈
  *      3.2.2)操作符栈非空
- *          3.2.2.1)当前遍历的操作符 比 操作符栈顶 优先级高,则直接入操作符栈
- *          3.2.2.2)当前遍历的操作符 比 操作符栈顶 优先级低
- *                  ①弹出数值栈的 栈顶和次栈顶两个数
- *                  ②弹出操作符栈的 栈顶操作符
- *                  ③进行运算,然后将结果压入数值栈
- *                  ②将当前操作符入栈
- *
- *
+ *      3.2.2.1)当前遍历的操作符 比 操作符栈顶 优先级高,则直接入操作符栈
+ *      3.2.2.2)当前遍历的操作符 比 操作符栈顶 优先级低
+ *          ①弹出数值栈的 栈顶和次栈顶两个数
+ *          ②弹出操作符栈的 栈顶操作符
+ *          ③进行运算,然后将结果压入数值栈
+ *          ②将当前操作符入栈
  * @date 2020/10/22 14:36
  */
 public class S901StackInfixCalculate {
 
-    static Map<Character, Integer> operateMap = new HashMap<>();
-    static Map<Character, Character> map = new HashMap<>();
+    // 定义操作符优先级
+    private static Map<String, Integer> operatePriorityMap = new HashMap<String, Integer>();
 
     static {
-        operateMap.put('*', 5);
-        operateMap.put('/', 5);
-        operateMap.put('+', 3);
-        operateMap.put('-', 3);
-        map.put('{', '}');
-        map.put('(', ')');
-        map.put('[', ']');
+        operatePriorityMap.put("*", 5);
+        operatePriorityMap.put("/", 5);
+        operatePriorityMap.put("+", 3);
+        operatePriorityMap.put("-", 3);
     }
 
     public static void main(String[] args) {
-        String str2 = "(){}[";
-        boolean check = check(str2);
-        System.out.println(str2 + ",该字符串配对结果:" + check);
-        String str = "2+2*30-4-60/6";
-        int reslut = calculate(str);
-        System.out.println(str + "=" + reslut);
+        String infixExpressionStr = "   10+10*10-10   -10/10  ";
+        Integer calculateResult = calculate(infixExpressionStr);
+        System.out.println(infixExpressionStr + "=" + calculateResult);
     }
 
-    private static boolean check(String str) {
-        Stack<Character> operateStack = new Stack();
-        for (int i = 0; i < str.length(); i++) {
-            if (!operateStack.empty()) {
-                Character peek = operateStack.peek();
-                if (map.get(peek) == str.charAt(i)) {
-                    operateStack.pop();
-                    continue;
-                }
-            }
-            operateStack.push(str.charAt(i));
-        }
-        return operateStack.empty();
-    }
+    private static Integer calculate(String infixExpressionStr) {
+        // 便于遍历，转成集合
+        List<String> infixExpList = strToInfixList(infixExpressionStr);
 
-    private static int calculate(String str) {
-        // 校验参数
-        if (StringUtils.isEmpty(str)) {
-            throw new RuntimeException("输入数据不能为空");
-        }
-        String regEx = "^\\d+.*\\d$";
-        Pattern pattern = Pattern.compile(regEx);
-        Matcher matcher = pattern.matcher(str);
-        if (!matcher.matches()) {
-            throw new RuntimeException("请输入合法数据");
-        }
+        // 数值栈
+        Stack<Integer> valueStack = new Stack<>();
+        // 操作符栈
+        Stack<String> operateStack = new Stack<>();
 
-
-        Stack<Integer> numStack = new Stack();
-        Stack<Character> operateStack = new Stack();
-
-        StringBuffer num = new StringBuffer();
-        for (int i = 0; i < str.length(); i++) {
-            String regExNum = "^\\d*\\d$";
-            Pattern patternNum = Pattern.compile(regExNum);
-            Matcher matcherNum = patternNum.matcher(String.valueOf(str.charAt(i)));
-            if (matcherNum.matches()) { // 数字
-                num.append(str.charAt(i));
-
-                if (i != str.length() - 1) {
-                    StringBuffer numTemp = new StringBuffer(num);
-                    numTemp.append(str.charAt(i + 1));
-                    Matcher matcherNum2 = patternNum.matcher(numTemp);
-                    if (!matcherNum2.matches()) {
-                        numStack.push(Integer.parseInt(num.toString()));
-                        num = new StringBuffer();
-                    }
-                } else {
-                    numStack.push(Integer.parseInt(num.toString()));
-                }
-            } else { // 字符
-                char currentOperate = str.charAt(i);
-                // 非空栈
-                if (!operateStack.empty()) {
-                    // 查看栈顶操作符
-                    char stackTopOperate = operateStack.peek();
-
-                    // 比较运算符优先级
-                    Integer stackTopOperateLevel = operateMap.get(stackTopOperate);
-                    Integer currentOperateLevel = operateMap.get(currentOperate);
-                    boolean isHighLevelCurrentOperate = currentOperateLevel > stackTopOperateLevel;
-
-                    // 当前操作符优先级 低于或等于 栈顶操作符符优先级
-                    if (!isHighLevelCurrentOperate) {
-                        Integer pop1 = numStack.pop();
-                        Integer pop2 = numStack.pop();
-                        Character operate = operateStack.pop();
-                        Integer result = calOperate(operate, pop1, pop2);
-                        numStack.push(result);
+        // 遍历中缀表达式
+        infixExpList.stream().forEach(item -> {
+                    if (checkNum(item)) {
+                        valueStack.push(Integer.parseInt(item));
+                    } else {
+                        if (!operateStack.empty()) {// 操作符非空时
+                            // 栈顶操作符
+                            String stackTopOperate = operateStack.peek();
+                            // 判读当前操作符是否 小于或等于 栈顶操作符 优先级
+                            if (!checkCurrentOperateHighPriority(item, stackTopOperate)) {
+                                Integer value1 = valueStack.pop();
+                                Integer value2 = valueStack.pop();
+                                Integer result = calculateByOperate(value1, value2, operateStack.pop());
+                                valueStack.push(result);
+                            }
+                        }
+                        operateStack.push(item);
                     }
                 }
-                // 操作符压入栈
-                operateStack.push(currentOperate);
-            }
-        }
+        );
 
         while (!operateStack.empty()) {
-            Character operate = operateStack.pop();
-            Integer pop1 = numStack.pop();
-            Integer pop2 = numStack.pop();
-            Integer result = calOperate(operate, pop1, pop2);
-            numStack.push(result);
+            Integer value1 = valueStack.pop();
+            Integer value2 = valueStack.pop();
+            Integer result = calculateByOperate(value1, value2, operateStack.pop());
+            valueStack.push(result);
         }
-        return numStack.pop();
+        return valueStack.pop();
     }
 
-    private static Integer calOperate(char operate, Integer pop1, Integer pop2) {
-        if ('*' == operate) {
-            return pop1 * pop2;
-        } else if ('/' == operate) {
-            return pop2 / pop1;
-        } else if ('+' == operate) {
-            return pop2 + pop1;
-        } else if ('-' == operate) {
-            return pop2 - pop1;
+    /**
+     * 根据操作符计算结果
+     *
+     * @param value1
+     * @param value2
+     * @param operate 操作符
+     * @return java.lang.Integer
+     * @author yds
+     * @date 2020/10/23 19:00
+     */
+    private static Integer calculateByOperate(Integer value1, Integer value2, String operate) {
+        switch (operate) {
+            case "+":
+                return value1 + value2;
+            case "-":
+                return value2 - value1;
+            case "*":
+                return value1 * value2;
+            case "/":
+                return value2 / value1;
+            default:
+                throw new RuntimeException("当前只支持 +-*/ 计算，后续功能开发中...");
         }
-        return 0;
     }
 
 
-    public void operatePriority(char a, char b) {
-        if ("*".equals(a) || "/".equals(a)) {
+    /**
+     * 中缀表达式 转 集合 同时处理多位数
+     *
+     * @param infixExpressionStr 中缀表达式
+     * @return java.util.List<java.lang.String>
+     * @author yds
+     * @date 2020/10/23 19:02
+     */
+    private static List<String> strToInfixList(String infixExpressionStr) {
+        // 格式化
+        infixExpressionStr = infixExpressionStr.trim().replaceAll(" ", "");
 
+        // 参数校验
+        validation(infixExpressionStr);
+
+        // 中缀表达式集合结果
+        List<String> infixExpList = new ArrayList<>();
+
+        // 多位数处理使用的变量
+        StringBuffer bufferNum = new StringBuffer();
+
+        // 遍历集合处理数据
+        for (int i = 0; i < infixExpressionStr.length(); i++) {
+            char currentItem = infixExpressionStr.charAt(i);
+
+            // 判断是否为数字
+            if (checkNum(String.valueOf(currentItem))) {
+                bufferNum.append(String.valueOf(currentItem));
+
+                // 多位数处理
+                // 非最后一位
+                if (i < infixExpressionStr.length() - 1) {
+                    // 下探一位，拼装后是否 为数字
+                    String nextItemStr = String.valueOf(infixExpressionStr.charAt(i + 1));
+                    if (!checkNum(bufferNum.toString() + nextItemStr)) {
+                        infixExpList.add(bufferNum.toString());
+                        bufferNum = new StringBuffer();
+                    }
+                    continue;
+                }
+
+                // 最后一位
+                if (i == infixExpressionStr.length() - 1) {
+                    infixExpList.add(bufferNum.toString());
+                    bufferNum = new StringBuffer();
+                }
+            } else {
+                infixExpList.add(String.valueOf(currentItem));
+            }
         }
+        return infixExpList;
     }
 
+
+    /**
+     * 比较两个操作符优先级，当前操作符是否高优先级
+     *
+     * @param curretntOperate 当前操作符
+     * @param stackTopOperate 栈顶操作符
+     * @return boolean
+     * @author yds
+     * @date 2020/10/23 19:00
+     */
+    private static boolean checkCurrentOperateHighPriority(String curretntOperate, String stackTopOperate) {
+        return operatePriorityMap.get(curretntOperate) > operatePriorityMap.get(stackTopOperate);
+    }
+
+    /**
+     * 检查是否数字
+     * 根据需要可自行 完善
+     *
+     * @param item
+     * @return boolean
+     * @author yds
+     * @date 2020/10/23 17:50
+     */
+    private static boolean checkNum(String item) {
+        return item.matches("^[0-9]*$");
+    }
+
+    /**
+     * 参数校验
+     *
+     * @param infixExpressionStr 中缀表达式
+     * @return void
+     * @author yds
+     * @date 2020/10/23 19:01
+     */
+    private static void validation(String infixExpressionStr) {
+        if (StringUtils.isEmpty(infixExpressionStr)) {
+            throw new RuntimeException("输入表达式不能为空");
+        }
+        if (!infixExpressionStr.matches("^\\d+.*\\d$")) {
+            throw new RuntimeException("输入表达式不合法");
+        }
+    }
 }
