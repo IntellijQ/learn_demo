@@ -1,4 +1,4 @@
-package com.learn.dataStructure.D3stack;
+package com.learn.dataStructure.D1LinkedList;
 
 import lombok.Data;
 
@@ -8,7 +8,7 @@ import lombok.Data;
  * @description: TODO
  * @date 2020/10/21 15:58
  */
-public class S8Josepfu {
+public class CricleSingle_Josepfu {
 
     public static void main(String[] args) {
         CricleSingleLinkedList cricleSingleLinkedList = new CricleSingleLinkedList(10);

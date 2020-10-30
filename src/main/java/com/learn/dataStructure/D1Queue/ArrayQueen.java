@@ -1,26 +1,27 @@
-package com.learn.dataStructure.D2queen;
+package com.learn.dataStructure.D1Queue;
 
 import java.util.Scanner;
 
 /**
  * @author yds
- * @title: RangQueen
- * @description: 队列实现方式--环形
+ * @title: ArrayQueen
+ * @description: 队列实现方式---数组
  * @date 2020/9/27 10:17
  */
-public class RangQueen {
+public class ArrayQueen {
     private int queenSize;
     private int[] queen;
-    private int front = 0;
-    private int rear = 0;
+    private int front = -1;//队列头
+    private int rear = -1;//队列尾
+
 
 
     public static void main(String[] args) {
 
-        RangQueen arrayQueen = new RangQueen(3);
+        ArrayQueen arrayQueen = new ArrayQueen(5);
         boolean doFlag = true;
         while (doFlag){
-            System.out.println("欢迎来到环形队列测试案列");
+            System.out.println("欢迎来到数组队列测试案列");
             System.out.println("a-添加队列数据");
             System.out.println("g-获取队列数据");
             System.out.println("s-展示队列数据");
@@ -60,14 +61,22 @@ public class RangQueen {
         }
     }
 
+
+
+//4   1 rear
+//3   2
+//2   3
+//1   5
+//0   0 
+//-1  / front
     //增加数据
     public void add(int value){
-        if(front == (rear + 1) % queenSize){//互补取值，相等表示队列满了
+        if(rear == (queenSize - 1)){
             System.out.printf("队列已到达最大值%s\n", queenSize);
             return;
         }
+        rear++;
         queen[rear] = value;
-        rear = (rear + 1) % queenSize;
     }
 
     //获取数据
@@ -76,8 +85,8 @@ public class RangQueen {
             System.out.printf("队列中已无数据\n");
             return 0;
         }
+        front++;
         int i = queen[front];
-        front = (front + 1) % queenSize;
         System.out.printf("%s\n", i);
         return i;
     }
@@ -87,32 +96,32 @@ public class RangQueen {
         if(rear == front){
             System.out.println("队列中已无数据");
         }
-        int currentSize = currentSize();
-        for(int i = front; i < front + currentSize; i++){
-            System.out.printf("queen[%s]=%s\n", i % queenSize, queen[i % queenSize]);
+        for(int i = (front + 1); i <= rear; i++){
+            System.out.printf("queen[%s]=%s\n", i, queen[i]);
         }
     }
 
     //获取当前队列数量
     public int currentSize(){
-        int currentSize =  (queenSize + rear - front) % queenSize;
+        int currentSize = rear - headIndx() + 1;
         System.out.printf("当前队列数据个数%s\n", currentSize);
         return currentSize;
     }
 
-
+    
     //获取当前队列开始位置
     public int headIndx(){
         if(rear == front){
             System.out.println("队列中已无数据");
         }
 
-        System.out.printf("当前队列头位置%s\n", front);
-        return front;
+        int headIndex = front + 1;
+        System.out.printf("当前队列头位置%s\n", headIndex);
+        return headIndex;
     }
 
 
-    public RangQueen(int queenSize){
+    public ArrayQueen(int queenSize){
         this.queenSize = queenSize;
         queen = new int[queenSize];
     }

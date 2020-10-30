@@ -1,4 +1,4 @@
-package com.learn.dataStructure.D1link;
+package com.learn.dataStructure.D1LinkedList;
 
 /**
  * @author yds

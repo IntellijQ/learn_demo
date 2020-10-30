@@ -1,4 +1,4 @@
-package com.learn.dataStructure.D4Recursion;
+package com.learn.dataStructure.D3Recursion;
 
 /**
  * @author yds
@@ -6,7 +6,7 @@ package com.learn.dataStructure.D4Recursion;
  * @description: 八皇后问题
  * @date 2020/10/29 10:25
  */
-public class Queue8 {
+public class Queen8 {
 
     static int queueCount = 0;
     static int max = 8;

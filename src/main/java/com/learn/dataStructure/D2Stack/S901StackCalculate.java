@@ -1,4 +1,4 @@
-package com.learn.dataStructure.D3stack;
+package com.learn.dataStructure.D2Stack;
 
 import org.springframework.util.StringUtils;
 
