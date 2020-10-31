@@ -16,6 +16,27 @@ import java.time.LocalDateTime;
 public class S3ExchangeSort extends BaseSort {
 
     public static void main(String[] args) {
+        int[] array = {10,7,1,3,9,4};
+//        10,7,1,3,9,4
+//        7,10,1,3,9,4
+//        7,1,10,3,9,4
+//        7,1,3,10,9,4
+//        7,1,3,9,10,4
+//        7,1,3,9,4,10
+//
+//        1,7,3,9,4,10
+//        1,3,7,9,4,10
+//        1,3,7,9,4,10
+//        1,3,7,4,9,10
+//
+//        1,3,7,4,9,10
+//        1,3,7,4,9,10
+//        1,3,4,7,9,10
+//
+//        1,3,4,7,9,10
+//        1,3,4,7,9,10
+//
+//        1,3,4,7,9,10
         printlnArray("排序前", array);
         LocalDateTime begin = LocalDateTime.now();
         bulleSorting(array);
@@ -32,7 +53,7 @@ public class S3ExchangeSort extends BaseSort {
      */
     private static void bulleSorting(int[] array) {
         boolean isExchange = false;
-        for (int i = 0; i < array.length - 1; i++) { // 最后一趟无需操作（因为前面已经把未排序数据 排序好了）
+        for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {
                 if (array[j] > array[j + 1]) {
                     isExchange = true;

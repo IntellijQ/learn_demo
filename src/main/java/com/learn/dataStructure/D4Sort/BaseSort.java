@@ -14,7 +14,7 @@ public class BaseSort {
 
     static {
         for (int i = 0; i < max; i++) {
-            array[i] = (int) (Math.random() * 10000);
+            array[i] = (int) (Math.random() * 80000);
         }
     }
 
@@ -25,6 +25,9 @@ public class BaseSort {
      * @param array
      */
     public static void printlnArray(String desc, int[] array) {
+        if(array.length > 20){
+            return;
+        }
         System.out.print(desc + ":");
         Arrays.stream(array).forEach(item -> System.out.printf(item + " "));
         System.out.println();

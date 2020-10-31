@@ -20,6 +20,12 @@ import java.time.LocalDateTime;
 public class S2SelectSort extends BaseSort {
 
     public static void main(String[] args) {
+        int[] array = {10,7,1,3,9,4};
+//        1,7,10,3,9,4
+//        1,3,10,7,9,4
+//        1,3,4,7,9,10
+//        1,3,4,7,9,10
+//        1,3,4,7,9,10
         printlnArray("排序前",array);
         LocalDateTime begin = LocalDateTime.now();
         selectSorting(array);
@@ -29,10 +35,14 @@ public class S2SelectSort extends BaseSort {
         printlnArray("排序后",array);
     }
 
+    /**
+     * 选择排序 n^2
+     * @param array
+     */
     private static void selectSorting(int[] array) {
         int minIdex = 0;
-        for (int i = 0; i < array.length - 1; i++) { // 最后一趟无需操作（因为前面已经把未排序数据 排序好了）
-            minIdex = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            minIdex = i;
             for (int j = i + 1; j < array.length; j++) {
                 if(array[j] < array[minIdex]){
                     minIdex = j;
