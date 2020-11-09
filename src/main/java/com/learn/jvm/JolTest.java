@@ -1,8 +1,10 @@
 package com.learn.jvm;
 
 import org.openjdk.jol.info.ClassLayout;
+import org.openjdk.jol.info.GraphLayout;
 
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * @author yds
@@ -13,17 +15,24 @@ import java.util.HashMap;
 public class JolTest {
     public static void main(String[] args) {
 
+//        long obj = 1;
 //        A obj = new A();
-        HashMap<Long, Long> obj = new HashMap<>();
+        int[][] obj = new int[5][6];
+        obj[1][0] = 10;
+        obj[2][0] = 102;
+        obj[3][0] = 104;
+        obj[4][0] = 105;
+        obj[4][1] = 105;
+//        HashMap<Integer, List<Integer>> obj = new HashMap<>();
         //查看对象内部信息
         System.out.println(ClassLayout.parseInstance(obj).toPrintable());
         System.out.println(String.format("sizeof(new A):%s", ClassLayout.parseInstance(obj).instanceSize()));
-        //查看对象外部信息
-//        System.out.println(GraphLayout.parseInstance(obj).toPrintable());
+//        查看对象外部信息
+        System.out.println(GraphLayout.parseInstance(obj).toPrintable());
 //
-//        synchronized (obj){
-//            System.out.println(ClassLayout.parseInstance(obj).toPrintable());
-//        }
+        synchronized (obj){
+            System.out.println(ClassLayout.parseInstance(obj).toPrintable());
+        }
 
 //        OFFSET  SIZE   TYPE DESCRIPTION                               VALUE
 //        0     4        (object header)                           01 00 00 00 (00000001 00000000 00000000 00000000) (1)

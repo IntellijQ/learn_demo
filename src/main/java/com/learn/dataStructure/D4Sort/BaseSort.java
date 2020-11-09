@@ -9,13 +9,21 @@ import java.util.Arrays;
  * @date 2020/10/30 18:20
  */
 public class BaseSort {
-    static int max = 10;
+    static int max = 800000;
     static int[] array = new int[max];
 
     static {
         for (int i = 0; i < max; i++) {
-            array[i] = (int) (Math.random() * 80000);
+            array[i] = (int) (Math.random() * 8000000);
         }
+    }
+
+
+
+    public static void swap(int[] array, int a, int b) {
+        int temp = array[a];
+        array[a] = array[b];
+        array[b] = temp;
     }
 
     /**
@@ -25,11 +33,11 @@ public class BaseSort {
      * @param array
      */
     public static void printlnArray(String desc, int[] array) {
-        if(array.length > 20){
+        if(array.length > 30){
             return;
         }
         System.out.print(desc + ":");
-        Arrays.stream(array).forEach(item -> System.out.printf(item + " "));
+        System.out.printf(Arrays.toString(array));
         System.out.println();
     }
 }
