@@ -20,7 +20,7 @@ public class S2BinarySearch {
     }
 
     private static List<Integer> binarySearch(int target, int[] array, int left, int right) {
-        if (left > right) {
+        if(left > right || target < array[0] || target > array[right]){
             throw new RuntimeException("查找值：" + target + "，不存在");
         }
 
