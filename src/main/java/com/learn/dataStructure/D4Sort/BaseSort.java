@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @date 2020/10/30 18:20
  */
 public class BaseSort {
-    static int max = 800000;
+    static int max = 1000000;
     static int[] array = new int[max];
 
     static {
@@ -33,7 +33,7 @@ public class BaseSort {
      * @param array
      */
     public static void printlnArray(String desc, int[] array) {
-        if(array.length > 30){
+        if(array.length > 100){
             return;
         }
         System.out.print(desc + ":");

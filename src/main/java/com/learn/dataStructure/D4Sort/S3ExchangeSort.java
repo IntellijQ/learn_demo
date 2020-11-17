@@ -50,9 +50,7 @@ public class S3ExchangeSort extends BaseSort {
             while (array[++le] < pivotv) ;
             while (array[--ri] > pivotv) ;
             if (le >= ri) break;
-            int temp = array[le];
-            array[le] = array[ri];
-            array[ri] = temp;
+            swap(array, le, ri);
         }
 
 //        9, 1, 5, 3, 5, 6, 6, 7, 8, 9
