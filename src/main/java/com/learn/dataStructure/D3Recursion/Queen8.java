@@ -10,6 +10,7 @@ public class Queen8 {
 
     static int queueCount = 0;
     static int max = 8;
+    // 下边代表row值 ，a[row] 代表column值
     static int[] array = new int[max];
 
     public static void main(String[] args) {
@@ -26,13 +27,20 @@ public class Queen8 {
 
         for (int i = 0; i < max; i++) {
             array[row] = i;
-            if (isCanPut(row)) {
+            // row = 5
+            // a[5] = 1；
+            if (isCanPutChesse(row)) {
                 putChessPieces(row + 1);
             }
         }
     }
 
-    private static boolean isCanPut(int row) {
+    /**
+     * 是否可以下棋
+     * @param row
+     * @return
+     */
+    private static boolean isCanPutChesse(int row) {
         for (int i = 0; i < row; i++) {
             if (array[i] == array[row]) { // 列有攻击
                 return false;

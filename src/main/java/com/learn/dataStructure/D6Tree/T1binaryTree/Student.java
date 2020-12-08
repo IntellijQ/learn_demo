@@ -1,4 +1,4 @@
-package com.learn.dataStructure.D6BinaryTree;
+package com.learn.dataStructure.D6Tree.T1binaryTree;
 
 import lombok.Data;
 

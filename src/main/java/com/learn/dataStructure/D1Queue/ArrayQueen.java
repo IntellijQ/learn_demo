@@ -6,6 +6,7 @@ import java.util.Scanner;
  * @author yds
  * @title: ArrayQueen
  * @description: 队列实现方式---数组
+ * 先进 先出
  * @date 2020/9/27 10:17
  */
 public class ArrayQueen {

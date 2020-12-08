@@ -18,7 +18,7 @@ import java.util.*;
  *
  * @date 2020/10/22 14:36
  */
-public class S901StackCalculate {
+public class S1StackCalculate {
 
     // 定义操作符优先级
     private static Map<String, Integer> operatePriorityMap = new HashMap<String, Integer>();
