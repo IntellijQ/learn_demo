@@ -133,7 +133,10 @@
                 假设从P的x位开始匹配，那么P的0到x-1位与T的失配位往前数x位必须是一样的，
                 就是P的最大相同前缀和后缀，这就是前缀表。两者联系一下就是这个算法啦
         2. ：
-   https://zhuanlan.zhihu.com/p/105467597             
+   https://zhuanlan.zhihu.com/p/105467597    
+   
+   
+   https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/xue-xi-shu-ju-jie-gou-he-suan-fa-de-gao-xiao-fang-fa         
   #### 动态规划：
   #### 动态规划：
   #### 动态规划：

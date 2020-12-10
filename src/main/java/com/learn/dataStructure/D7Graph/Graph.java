@@ -17,20 +17,18 @@ import java.util.List;
 public class Graph {
     private Integer numVertexes;// 顶点数
     private List<String> vertexes;// 顶点信息
-    private int numEdges;// 边数
-    private int[][] edges;// 邻接矩阵信息
+    private int[][] matrix;// 邻接矩阵信息
 
     public Graph(Integer numVertexes) {
         this.numVertexes = numVertexes;
-        this.edges = new int[numVertexes][numVertexes];
         this.vertexes = new ArrayList<>();
+        this.matrix = new int[numVertexes][numVertexes];
     }
 
-    public Graph(List<String> vertexes, int[][] edges) {
+    public Graph(List<String> vertexes, int[][] matrix) {
         this.vertexes = vertexes;
         this.numVertexes = vertexes.size();
-        this.edges = edges;
-        this.numEdges = edges.length;
+        this.matrix = matrix;
     }
 
     // 增加结点
@@ -40,14 +38,13 @@ public class Graph {
 
     // 增加边
     public void addEdge(int startNo, int endNo, int weight) {
-        edges[startNo][endNo] = weight;
-        edges[endNo][startNo] = weight;
-        numEdges++;
+        matrix[startNo][endNo] = weight;
+        matrix[endNo][startNo] = weight;
     }
 
     // 获取两个指定顶点组成的边的权
     public int getEdgeWeightByVertexIndex(int startIndex, int endIndex) {
-        return edges[startIndex][endIndex];
+        return matrix[startIndex][endIndex];
     }
 
     // 获取第I个结点
@@ -57,7 +54,7 @@ public class Graph {
 
     // 展示邻接矩阵
     public void showGraph() {
-        for (int[] link : edges) {
+        for (int[] link : matrix) {
             System.out.println(Arrays.toString(link));
         }
     }
@@ -65,7 +62,7 @@ public class Graph {
 
     // 获取指点顶点v的第一个邻接结点
     public int getFirstNeighbor(int v) {
-        int[] edgeRow = edges[v];
+        int[] edgeRow = matrix[v];
         for (int i = v + 1; i < edgeRow.length; i++) {
             System.out.println(" 查看v=" + v + "-" + getVertexValueByIndex(v) + "结点的第一个邻接结点：edgeRow[" + i + "]=" + getVertexValueByIndex(i) + "，是否关联=" + edgeRow[i]);
             if (edgeRow[i] > 0) {
@@ -78,7 +75,7 @@ public class Graph {
 
     // 获取顶点V在顶点W之后的下一个邻接结点
     public int getNextNeighborByVertexIndex(int v, int w) {
-        int[] edgeRow = edges[v];
+        int[] edgeRow = matrix[v];
         for (int i = w + 1; i < edgeRow.length; i++) {
             System.out.println(" 查看v=" + v + "-" + getVertexValueByIndex(v) + "结点" + w + "之后的下一个邻接结点：edgeRow[" + i + "]=" + getVertexValueByIndex(i) + "，是否关联=" + edgeRow[i]);
             if (edgeRow[i] > 0) {
@@ -167,5 +164,21 @@ public class Graph {
             }
         }
         return path;
+    }
+
+    @Data
+    public static class Edge{
+        int startNo;
+        int endNo;
+        int weight;
+
+        public Edge() {
+        }
+
+        public Edge(int startNo, int endNo, int weight) {
+            this.startNo = startNo;
+            this.endNo = endNo;
+            this.weight = weight;
+        }
     }
 }
