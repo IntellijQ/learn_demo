@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d61ed853-7ca2-4816-8930-9d1bad2aaac7" name="Default Changelist" comment="迪杰斯特拉---区分无向图 和 有向图">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A6ShortestPath/Floyed.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Kotlin Class" />
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="ColdFusion File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1604134694" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="haha" />
+                    <option name="lastUsedInstant" value="1604134181" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="test" />
+                    <option name="lastUsedInstant" value="1604133802" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\9fsoftware\repository" />
+        <option name="mavenHome" value="D:/9fsoftware/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\9fsoftware\apache-maven-3.6.1\conf\jijin-settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cZw8p4l4DQVZKZVzGECS3J9sCy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultCfmlFileTemplate" value="ColdFusion File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SQL" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A6ShortestPath" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\jiufupro\jijin\learn_demo\src\main\java\com\learn\dataStructure\D7Algorithm\A2Dynamic\StringPatter" />
+      <recent name="D:\jiufupro\jijin\learn_demo\src\main\java\com\learn\dataStructure\D4Sort" />
+      <recent name="D:\jiufupro\jijin\learn_demo\src\main\java\com\learn\jvm" />
+      <recent name="D:\jiufupro\jijin\learn_demo\src\main\java\com\learn\dataStructure\stack" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.learn.dataStructure.D8Algorithm.A4MinTree" />
+      <recent name="com.learn.dataStructure.D7Algorithm.A2Kmp" />
+      <recent name="com.learn.dataStructure.D6Tree.T3sortTree" />
+      <recent name="com.learn.dataStructure.D6Tree.T2huffman" />
+      <recent name="com.learn.dataStructure.D6Tree" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jiufupro\jijin\learn_demo\src\main\java\com\learn\dataStructure\D8Algorithm\A6ShortestPath" />
+      <recent name="D:\jiufupro\jijin\learn_demo\src\main\java\com\learn\dataStructure\D8Algorithm\A4MinTree" />
+      <recent name="D:\jiufupro\jijin\learn_demo\src\main\java\com\learn\dataStructure\D7Graph" />
+      <recent name="D:\jiufupro\jijin\demo\src\main\java\com\yds\shangguigu" />
+      <recent name="D:\jiufupro\jijin\demo\src\main\java\com\yds\gof" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Floyed">
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.dataStructure.D8Algorithm.A6ShortestPath.Dijkstra" />
+      <module name="learn_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.dataStructure.D8Algorithm.A6ShortestPath.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Floyed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.dataStructure.D8Algorithm.A6ShortestPath.Floyed" />
+      <module name="learn_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.dataStructure.D8Algorithm.A6ShortestPath.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.dataStructure.D7Graph.GraphTest" />
+      <module name="learn_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.dataStructure.D7Graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.dataStructure.D8Algorithm.A4MinTree.PrimAlgorithm" />
+      <module name="learn_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.dataStructure.D8Algorithm.A4MinTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WhiteBlack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.dataStructure.D8Algorithm.A5UnionFind.WhiteBlack" />
+      <module name="learn_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.dataStructure.D8Algorithm.A5UnionFind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="learn_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Floyed" />
+        <item itemvalue="Application.Dijkstra" />
+        <item itemvalue="Application.PrimAlgorithm" />
+        <item itemvalue="Application.GraphTest" />
+        <item itemvalue="Application.WhiteBlack" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d61ed853-7ca2-4816-8930-9d1bad2aaac7" name="Default Changelist" comment="" />
+      <created>1590749266492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590749266492</updated>
+      <workItem from="1590749272719" duration="3909000" />
+      <workItem from="1590763957173" duration="745000" />
+      <workItem from="1590764753101" duration="4062000" />
+      <workItem from="1590982562549" duration="4400000" />
+      <workItem from="1591585529411" duration="3167000" />
+      <workItem from="1591933336219" duration="4466000" />
+      <workItem from="1592288194095" duration="6937000" />
+      <workItem from="1592446869096" duration="4233000" />
+      <workItem from="1592703167209" duration="51000" />
+      <workItem from="1592706849233" duration="2028000" />
+      <workItem from="1592811162100" duration="214000" />
+      <workItem from="1592815158071" duration="2942000" />
+      <workItem from="1593240716790" duration="835000" />
+      <workItem from="1595247286030" duration="3561000" />
+      <workItem from="1595306874709" duration="19905000" />
+      <workItem from="1595816600959" duration="597000" />
+      <workItem from="1595916273870" duration="1183000" />
+      <workItem from="1597745548805" duration="1083000" />
+      <workItem from="1597748304876" duration="11406000" />
+      <workItem from="1597890465245" duration="19330000" />
+      <workItem from="1598235554668" duration="54466000" />
+      <workItem from="1598667538063" duration="13355000" />
+      <workItem from="1598777132288" duration="4993000" />
+      <workItem from="1598838586991" duration="46000" />
+      <workItem from="1600164621221" duration="29845000" />
+      <workItem from="1600654556330" duration="3663000" />
+      <workItem from="1601172724751" duration="23595000" />
+      <workItem from="1602208920751" duration="2279000" />
+      <workItem from="1603267026863" duration="33843000" />
+      <workItem from="1603442668404" duration="8686000" />
+      <workItem from="1603678262079" duration="15683000" />
+      <workItem from="1603796706651" duration="592000" />
+      <workItem from="1603937299684" duration="42287000" />
+      <workItem from="1604112068401" duration="11914000" />
+      <workItem from="1604283708328" duration="14610000" />
+      <workItem from="1604458461456" duration="44589000" />
+      <workItem from="1604732954071" duration="6817000" />
+      <workItem from="1604887812881" duration="15706000" />
+      <workItem from="1604974972573" duration="6299000" />
+      <workItem from="1605147560708" duration="24310000" />
+      <workItem from="1605330181046" duration="1221000" />
+      <workItem from="1605362632011" duration="596000" />
+      <workItem from="1605493219609" duration="25337000" />
+      <workItem from="1605593890724" duration="67877000" />
+      <workItem from="1606099294765" duration="49525000" />
+      <workItem from="1606529387943" duration="607000" />
+      <workItem from="1606704572086" duration="15079000" />
+      <workItem from="1607308085499" duration="83497000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1603443726311</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603443726311</updated>
+    </task>
+    <task id="LOCAL-00002" summary="学习整理">
+      <created>1603444295605</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603444295605</updated>
+    </task>
+    <task id="LOCAL-00003" summary="栈-计算器实现-中缀表达式">
+      <created>1603451173233</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603451173233</updated>
+    </task>
+    <task id="LOCAL-00004" summary="中缀表达式转后缀表达式逻辑">
+      <created>1603451265268</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603451265268</updated>
+    </task>
+    <task id="LOCAL-00005" summary="中缀表达式转后缀表达式逻辑">
+      <created>1603706920683</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603706920684</updated>
+    </task>
+    <task id="LOCAL-00006" summary="递归&#10;八皇后问题">
+      <created>1604024887860</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604024887860</updated>
+    </task>
+    <task id="LOCAL-00007" summary="整理">
+      <created>1604025382624</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604025382624</updated>
+    </task>
+    <task id="LOCAL-00008" summary="md">
+      <created>1604027762623</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604027762623</updated>
+    </task>
+    <task id="LOCAL-00009" summary="递归实现&#10;1.阶乘&#10;2.斐波那契数列">
+      <created>1604039868069</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604039868069</updated>
+    </task>
+    <task id="LOCAL-00010" summary="排序算法&#10;1.冒泡排序&#10;2.选择排序&#10;3.插入排序">
+      <created>1604132263659</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604132263659</updated>
+    </task>
+    <task id="LOCAL-00011" summary="排序算法&#10;1.基数排序&#10;2.归并排序">
+      <created>1604908027924</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604908027924</updated>
+    </task>
+    <task id="LOCAL-00012" summary="搜索算法&#10;1.线性&#10;2.二分法">
+      <created>1604918242371</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604918242371</updated>
+    </task>
+    <task id="LOCAL-00013" summary="搜索算法&#10;1.插入搜索&#10;2.斐波那契搜索">
+      <created>1605153266558</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605153266558</updated>
+    </task>
+    <task id="LOCAL-00014" summary="reademe">
+      <created>1605153583374</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605153583374</updated>
+    </task>
+    <task id="LOCAL-00015" summary="1.二叉树&#10;2.堆排序">
+      <created>1605581070211</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605581070211</updated>
+    </task>
+    <task id="LOCAL-00016" summary="提交">
+      <created>1607424171365</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607424171365</updated>
+    </task>
+    <task id="LOCAL-00017" summary="最小生成树">
+      <created>1607586537182</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607586537182</updated>
+    </task>
+    <task id="LOCAL-00018" summary="迪杰斯特拉">
+      <created>1607600021368</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607600021368</updated>
+    </task>
+    <task id="LOCAL-00019" summary="迪杰斯特拉---区分无向图 和 有向图">
+      <created>1607657853811</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607657853811</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <MESSAGE value="学习整理" />
+    <MESSAGE value="栈-计算器实现-中缀表达式" />
+    <MESSAGE value="中缀表达式转后缀表达式逻辑" />
+    <MESSAGE value="递归&#10;八皇后问题" />
+    <MESSAGE value="整理" />
+    <MESSAGE value="md" />
+    <MESSAGE value="递归实现&#10;1.阶乘&#10;2.斐波那契数列" />
+    <MESSAGE value="排序算法&#10;1.冒泡排序&#10;2.选择排序&#10;3.插入排序" />
+    <MESSAGE value="排序算法&#10;1.基数排序&#10;2.归并排序" />
+    <MESSAGE value="搜索算法&#10;1.线性&#10;2.二分法" />
+    <MESSAGE value="搜索算法&#10;1.插入搜索&#10;2.斐波那契搜索" />
+    <MESSAGE value="reademe" />
+    <MESSAGE value="1.二叉树&#10;2.堆排序" />
+    <MESSAGE value="提交" />
+    <MESSAGE value="最小生成树" />
+    <MESSAGE value="迪杰斯特拉" />
+    <MESSAGE value="迪杰斯特拉---区分无向图 和 有向图" />
+    <option name="LAST_COMMIT_MESSAGE" value="迪杰斯特拉---区分无向图 和 有向图" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="111" key="#Images" timestamp="1603694703620">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="361" y="111" key="#Images/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1603694703620" />
+    <state x="361" y="111" key="#Inspections" timestamp="1606728277042">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="361" y="111" key="#Inspections/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1606728277042" />
+    <state x="361" y="111" key="#Project_Structure" timestamp="1607657855918">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="-1469" y="2" key="#Project_Structure/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586542245" />
+    <state x="361" y="111" key="#Project_Structure/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607657855918" />
+    <state x="361" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604029190498">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="361" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1604029190498" />
+    <state x="480" y="255" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606720228299">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="480" y="255" key="#com.intellij.fileTypes.FileTypeChooser/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1606720228299" />
+    <state x="574" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1607505989876">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="-1202" y="66" key="#com.intellij.ide.util.MemberChooser/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607425776617" />
+    <state x="574" y="162" key="#com.intellij.ide.util.MemberChooser/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607505989876" />
+    <state x="408" y="377" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1607667636048">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="408" y="377" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607667636048" />
+    <state x="548" y="311" width="547" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606462489467">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="548" y="311" width="547" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1606462489467" />
+    <state x="482" y="163" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1605528077427">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="482" y="163" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1605528077426" />
+    <state x="382" y="40" width="947" height="808" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605867696604">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="-1598" y="-50" width="947" height="808" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1605775558235" />
+    <state x="382" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1605867696604" />
+    <state x="499" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605867626743">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="-1296" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1605771850886" />
+    <state x="499" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1605867626743" />
+    <state x="499" y="199" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1604635857190">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="499" y="199" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1604635857190" />
+    <state x="350" y="40" width="1070" height="868" key="CommitChangelistDialog2" timestamp="1607670042885">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="-1829" y="-137" width="1070" height="868" key="CommitChangelistDialog2/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586534827" />
+    <state x="350" y="40" width="856" height="824" key="CommitChangelistDialog2/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607670042885" />
+    <state x="350" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1604754839640" />
+    <state width="508" height="466" key="DebuggerActiveHint" timestamp="1607595724014">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="635" height="583" key="DebuggerActiveHint/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607582288008" />
+    <state width="508" height="466" key="DebuggerActiveHint/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607595724014" />
+    <state width="508" height="466" key="DebuggerActiveHint/0.40.1536.824@0.40.1536.824" timestamp="1606121481540" />
+    <state x="125" y="110" width="1228" height="686" key="DiffContextDialog" timestamp="1607657523010">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="125" y="110" width="1228" height="686" key="DiffContextDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607657523010" />
+    <state x="125" y="110" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1604754837996" />
+    <state x="549" y="178" key="FileChooserDialogImpl" timestamp="1603443274380">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="549" y="178" key="FileChooserDialogImpl/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1603443274380" />
+    <state width="1493" height="337" key="GridCell.Tab.0.bottom" timestamp="1607670058892">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1877" height="419" key="GridCell.Tab.0.bottom/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586498203" />
+    <state width="1493" height="337" key="GridCell.Tab.0.bottom/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607670058892" />
+    <state width="1493" height="362" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1606121989610" />
+    <state width="1493" height="337" key="GridCell.Tab.0.center" timestamp="1607670058891">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1877" height="419" key="GridCell.Tab.0.center/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586498203" />
+    <state width="1493" height="337" key="GridCell.Tab.0.center/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607670058891" />
+    <state width="1493" height="362" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1606121989610" />
+    <state width="1493" height="337" key="GridCell.Tab.0.left" timestamp="1607670058891">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1877" height="419" key="GridCell.Tab.0.left/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586498203" />
+    <state width="1493" height="337" key="GridCell.Tab.0.left/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607670058891" />
+    <state width="1493" height="362" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1606121989609" />
+    <state width="1493" height="337" key="GridCell.Tab.0.right" timestamp="1607670058891">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1877" height="419" key="GridCell.Tab.0.right/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586498203" />
+    <state width="1493" height="337" key="GridCell.Tab.0.right/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607670058891" />
+    <state width="1493" height="362" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1606121989610" />
+    <state width="1493" height="122" key="GridCell.Tab.1.bottom" timestamp="1607599990153">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1877" height="439" key="GridCell.Tab.1.bottom/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586470494" />
+    <state width="1493" height="122" key="GridCell.Tab.1.bottom/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607599990153" />
+    <state width="1493" height="259" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1606121935730" />
+    <state width="1493" height="122" key="GridCell.Tab.1.center" timestamp="1607599990152">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1877" height="439" key="GridCell.Tab.1.center/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586470494" />
+    <state width="1493" height="122" key="GridCell.Tab.1.center/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607599990152" />
+    <state width="1493" height="259" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1606121935730" />
+    <state width="1493" height="122" key="GridCell.Tab.1.left" timestamp="1607599990152">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1877" height="439" key="GridCell.Tab.1.left/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586470494" />
+    <state width="1493" height="122" key="GridCell.Tab.1.left/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607599990152" />
+    <state width="1493" height="259" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1606121935730" />
+    <state width="1493" height="122" key="GridCell.Tab.1.right" timestamp="1607599990152">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1877" height="439" key="GridCell.Tab.1.right/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586470494" />
+    <state width="1493" height="122" key="GridCell.Tab.1.right/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607599990152" />
+    <state width="1493" height="259" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1606121935730" />
+    <state x="249" y="40" key="SettingsEditor" timestamp="1604132546534">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="249" y="40" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1604132546534" />
+    <state x="490" y="194" width="561" height="524" key="StructurePopup" timestamp="1603270255446">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="490" y="194" width="561" height="524" key="StructurePopup/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1603270255446" />
+    <state x="361" y="185" key="Vcs.Push.Dialog.v2" timestamp="1607657862019">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="-1469" y="94" key="Vcs.Push.Dialog.v2/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586550228" />
+    <state x="361" y="185" key="Vcs.Push.Dialog.v2/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607657862019" />
+    <state x="361" y="185" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1604133959388" />
+    <state x="93" y="133" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604755387041">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="93" y="133" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1601176963626" />
+    <state x="93" y="133" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.40.1536.824@0.40.1536.824" timestamp="1604755387041" />
+    <state x="562" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605357950646">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="-1217" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1604907973132" />
+    <state x="562" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1603708311822" />
+    <state x="562" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1605357950646" />
+    <state x="-1222" y="328" key="extract.method.dialog" timestamp="1605782499880">
+      <screen x="-1920" y="-87" width="1920" height="1030" />
+    </state>
+    <state x="-1222" y="328" key="extract.method.dialog/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1605782499880" />
+    <state x="558" y="372" key="extract.method.dialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1605669753137" />
+    <state x="425" y="207" key="run.anything.popup" timestamp="1607597093922">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="425" y="207" key="run.anything.popup/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607597093922" />
+    <state x="425" y="207" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1598715468228" />
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1607668816780">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="-1381" y="94" width="840" height="848" key="search.everywhere.popup/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607581680922" />
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607668816780" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/CheckNum.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/CheckNum.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/CheckNum.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/share/PosterUtil.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/StringParttenTest.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/StringParttenTest.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D1LinkedList/DoubleLinkedListDemo.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D1LinkedList/CricleSingle_Josepfu.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D2Stack/S1StackCalculate.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D2Stack/S1StackCalculate.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D2Stack/S1StackCalculate.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D4Sort/S4MergeSort.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D4Sort/S4MergeSort.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D4Sort/S4MergeSort.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D4Sort/S4MergeSort.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D5Search/S4FibonacciSearch.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D4Sort/S2SelectSort.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D4Sort/Test.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D6Tree/T2huffman/Huffman01Tree.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D6Tree/T2huffman/Huffman01Tree.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="315" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D6Tree/T2huffman/Huffman02CodeTree.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D6Tree/T1binaryTree/BinaryTree.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="330" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D6Tree/T1binaryTree/BinaryTreeTest.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="341" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D6Tree/T3sortTree/SortTest.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D3Recursion/Queen8.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="368" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A2Dynamic/StringPatter/StringPatter02Kmp.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="378" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A2Dynamic/StringPatter/StringPatter02Kmp.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="379" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A2Dynamic/StringPatter/StringPatter02Kmp.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="380" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A2Dynamic/StringPatter/StringPatter02Kmp.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="381" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A2Dynamic/StringPatter/StringPatter02Kmp.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="382" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A3GreedyAlgorithm/PayMoney.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="383" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A3GreedyAlgorithm/PayMoney.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="384" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D7Graph/Graph.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="403" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A5UnionFind/UF.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="407" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A5UnionFind/UF.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="409" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A5UnionFind/WhiteBlack.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="417" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A5UnionFind/WhiteBlack.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A5UnionFind/WhiteBlack.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="419" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A5UnionFind/WhiteBlack.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="420" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A4MinTree/PrimAlgorithm.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="425" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A6ShortestPath/Dijkstra.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="438" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="sortTree.root.left.weight" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
