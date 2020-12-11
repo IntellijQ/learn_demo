@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d61ed853-7ca2-4816-8930-9d1bad2aaac7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa" beforeDir="false" afterPath="$PROJECT_DIR$/aa" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +49,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="test" />
-                    <option name="lastUsedInstant" value="1607678610" />
+                    <option name="branchName" value="test1" />
+                    <option name="lastUsedInstant" value="1607679145" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="test1" />
-                    <option name="lastUsedInstant" value="1607678360" />
+                    <option name="branchName" value="test" />
+                    <option name="lastUsedInstant" value="1607678610" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -284,7 +285,7 @@
       <workItem from="1606099294765" duration="49525000" />
       <workItem from="1606529387943" duration="607000" />
       <workItem from="1606704572086" duration="15079000" />
-      <workItem from="1607308085499" duration="91024000" />
+      <workItem from="1607308085499" duration="91217000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1603443726311</created>
@@ -557,10 +558,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="549" y="178" key="FileChooserDialogImpl/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1603443274380" />
-    <state width="196" height="275" key="Git.Branch.Popup" timestamp="1607678361812">
+    <state width="198" height="277" key="Git.Branch.Popup" timestamp="1607679147858">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="196" height="275" key="Git.Branch.Popup/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607678361812" />
+    <state width="198" height="277" key="Git.Branch.Popup/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607679147858" />
     <state width="1493" height="415" key="GridCell.Tab.0.bottom" timestamp="1607676494104">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
