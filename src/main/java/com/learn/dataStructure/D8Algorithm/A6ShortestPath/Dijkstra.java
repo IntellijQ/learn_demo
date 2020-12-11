@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import lombok.Data;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -20,7 +21,7 @@ public class Dijkstra {
     public static void main(String[] args) {
         Dijkstra dijkstra = new Dijkstra();
         Graph graph = dijkstra.createGraph();
-        List<DijkstraResult> dijikstra = dijkstra.dijikstra(graph, 0);
+        List<DijkstraResult> dijikstra = dijkstra.dijikstra(graph, 4);
         System.out.println(JSON.toJSONString(dijikstra));
     }
 
@@ -43,6 +44,9 @@ public class Dijkstra {
             pathWeightSum[i] = matrix[index][i];
         }
 
+        System.out.println("原始路径距离：" + Arrays.toString(pathWeightSum));
+        System.out.println();
+
 
         // 设置指定V被访问
         isVisited[index] = true;
@@ -52,14 +56,12 @@ public class Dijkstra {
             // 获取最小路径信息
             int currentShortPathIndex = getShortPathIndex(pathWeightSum, isVisited);
             if (currentShortPathIndex == -1) {
-                return resutlDijikstra(index, pathPre, pathWeightSum);
+                currentShortPathIndex = index;
             }
             int currentShortPathWeightSum = pathWeightSum[currentShortPathIndex];
-            System.out.println("当前最小路径下标：" + vertexes[currentShortPathIndex] + ",距离：" + currentShortPathWeightSum);
-
-
             // 设置最短路径结点被访问
             isVisited[currentShortPathIndex] = true;
+            System.out.println("当前最小路径下标：" + vertexes[currentShortPathIndex] + "被标记,距离：" + currentShortPathWeightSum);
 
             // 更新其他未被访问的结点 到指定结点的信息
             for (int i = 0; i < numVertexes; i++) {
@@ -70,12 +72,15 @@ public class Dijkstra {
                     pathPre[i] = currentShortPathIndex;
                     pathWeightSum[i] = newShortPathWeightSum;
                     System.out.println(",更新后前置结点为：" + vertexes[currentShortPathIndex] + ",新距离：" + newShortPathWeightSum);
+
+                    System.out.println(Arrays.toString(pathWeightSum));
+                    System.out.println();
                 }
             }
             System.out.println();
             check++;
         }
-        return null;
+        return resutlDijikstra(index, pathPre, pathWeightSum);
     }
 
     private List<DijkstraResult> resutlDijikstra(int index, int[] pathPre, int[] pathWeightSum) {
@@ -123,6 +128,20 @@ public class Dijkstra {
 
     public Graph createGraph() {
         Graph graph = new Graph();
+        //无向图
+//        String[] vertexes = {"A", "B", "C", "D", "E", "F","G"};
+//        int[][] matrix = new int[][]{
+//                {10000, 5, 7, 10000, 10000, 10000,2},
+//                {5, 10000, 10000, 9, 10000, 10000,3},
+//                {7, 10000, 10000, 10000, 8, 10000,10000},
+//                {10000, 9, 10000, 10000, 10000, 10,10000},
+//                {10000, 10000, 8, 10000, 10000, 5,4},
+//                {10000, 10000, 10000, 10, 5, 10000,10000},
+//                {2, 3, 10000, 10000, 4, 10000,10000},
+//
+//        };
+
+        // 有向图
         String[] vertexes = {"V0", "V1", "V2", "V3", "V4", "V5"};
         int[][] matrix = new int[][]{
                 {10000, 10000, 10, 10000, 30, 100},
