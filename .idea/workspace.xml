@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d61ed853-7ca2-4816-8930-9d1bad2aaac7" name="Default Changelist" comment="迪杰斯特拉---区分无向图 和 有向图">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A6ShortestPath/Floyed.java" afterDir="false" />
+    <list default="true" id="d61ed853-7ca2-4816-8930-9d1bad2aaac7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,16 +48,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1604134694" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="haha" />
-                    <option name="lastUsedInstant" value="1604134181" />
-                  </RecentBranch>
-                  <RecentBranch>
                     <option name="branchName" value="test" />
-                    <option name="lastUsedInstant" value="1604133802" />
+                    <option name="lastUsedInstant" value="1607678610" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="test1" />
+                    <option name="lastUsedInstant" value="1607678360" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1607677936" />
                   </RecentBranch>
                 </list>
               </option>
@@ -88,6 +88,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultCfmlFileTemplate" value="ColdFusion File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -283,7 +284,7 @@
       <workItem from="1606099294765" duration="49525000" />
       <workItem from="1606529387943" duration="607000" />
       <workItem from="1606704572086" duration="15079000" />
-      <workItem from="1607308085499" duration="83497000" />
+      <workItem from="1607308085499" duration="91024000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1603443726311</created>
@@ -418,7 +419,28 @@
       <option name="project" value="LOCAL" />
       <updated>1607657853811</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="弗洛伊德算法 Dis（A，K）+ Dis（K，B）&lt; Dis（A，B）">
+      <created>1607670166033</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607670166033</updated>
+    </task>
+    <task id="LOCAL-00021" summary="弗洛伊德算法 完善路径输出">
+      <created>1607677042082</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607677042082</updated>
+    </task>
+    <task id="LOCAL-00022" summary="文件">
+      <created>1607677515748</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1607677515748</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +478,10 @@
     <MESSAGE value="最小生成树" />
     <MESSAGE value="迪杰斯特拉" />
     <MESSAGE value="迪杰斯特拉---区分无向图 和 有向图" />
-    <option name="LAST_COMMIT_MESSAGE" value="迪杰斯特拉---区分无向图 和 有向图" />
+    <MESSAGE value="弗洛伊德算法 Dis（A，K）+ Dis（K，B）&lt; Dis（A，B）" />
+    <MESSAGE value="弗洛伊德算法 完善路径输出" />
+    <MESSAGE value="文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="111" key="#Images" timestamp="1603694703620">
@@ -467,19 +492,19 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="361" y="111" key="#Inspections/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1606728277042" />
-    <state x="361" y="111" key="#Project_Structure" timestamp="1607657855918">
+    <state x="361" y="111" key="#Project_Structure" timestamp="1607677367053">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1469" y="2" key="#Project_Structure/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586542245" />
-    <state x="361" y="111" key="#Project_Structure/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607657855918" />
+    <state x="361" y="111" key="#Project_Structure/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607677367052" />
     <state x="361" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604029190498">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="361" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1604029190498" />
-    <state x="480" y="255" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606720228299">
+    <state x="480" y="255" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607678377739">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="480" y="255" key="#com.intellij.fileTypes.FileTypeChooser/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1606720228299" />
+    <state x="480" y="255" key="#com.intellij.fileTypes.FileTypeChooser/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607678377739" />
     <state x="574" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1607505989876">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -511,75 +536,83 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="499" y="199" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1604635857190" />
-    <state x="350" y="40" width="1070" height="868" key="CommitChangelistDialog2" timestamp="1607670042885">
+    <state x="350" y="40" width="1070" height="868" key="CommitChangelistDialog2" timestamp="1607677514553">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1829" y="-137" width="1070" height="868" key="CommitChangelistDialog2/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586534827" />
-    <state x="350" y="40" width="856" height="824" key="CommitChangelistDialog2/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607670042885" />
+    <state x="350" y="40" width="856" height="824" key="CommitChangelistDialog2/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607677514553" />
     <state x="350" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1604754839640" />
-    <state width="508" height="466" key="DebuggerActiveHint" timestamp="1607595724014">
+    <state width="508" height="466" key="DebuggerActiveHint" timestamp="1607675986611">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="635" height="583" key="DebuggerActiveHint/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607582288008" />
-    <state width="508" height="466" key="DebuggerActiveHint/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607595724014" />
+    <state width="508" height="466" key="DebuggerActiveHint/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607675986611" />
     <state width="508" height="466" key="DebuggerActiveHint/0.40.1536.824@0.40.1536.824" timestamp="1606121481540" />
-    <state x="125" y="110" width="1228" height="686" key="DiffContextDialog" timestamp="1607657523010">
+    <state x="125" y="110" width="1228" height="686" key="DiffContextDialog" timestamp="1607677036284">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="125" y="110" width="1228" height="686" key="DiffContextDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607657523010" />
+    <state x="125" y="110" width="1228" height="686" key="DiffContextDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607677036284" />
     <state x="125" y="110" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1604754837996" />
     <state x="549" y="178" key="FileChooserDialogImpl" timestamp="1603443274380">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="549" y="178" key="FileChooserDialogImpl/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1603443274380" />
-    <state width="1493" height="337" key="GridCell.Tab.0.bottom" timestamp="1607670058892">
+    <state width="196" height="275" key="Git.Branch.Popup" timestamp="1607678361812">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="196" height="275" key="Git.Branch.Popup/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607678361812" />
+    <state width="1493" height="415" key="GridCell.Tab.0.bottom" timestamp="1607676494104">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1877" height="419" key="GridCell.Tab.0.bottom/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586498203" />
-    <state width="1493" height="337" key="GridCell.Tab.0.bottom/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607670058892" />
+    <state width="1493" height="415" key="GridCell.Tab.0.bottom/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607676494104" />
     <state width="1493" height="362" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1606121989610" />
-    <state width="1493" height="337" key="GridCell.Tab.0.center" timestamp="1607670058891">
+    <state width="1493" height="415" key="GridCell.Tab.0.center" timestamp="1607676494103">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1877" height="419" key="GridCell.Tab.0.center/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586498203" />
-    <state width="1493" height="337" key="GridCell.Tab.0.center/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607670058891" />
+    <state width="1493" height="415" key="GridCell.Tab.0.center/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607676494103" />
     <state width="1493" height="362" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1606121989610" />
-    <state width="1493" height="337" key="GridCell.Tab.0.left" timestamp="1607670058891">
+    <state width="1493" height="415" key="GridCell.Tab.0.left" timestamp="1607676494103">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1877" height="419" key="GridCell.Tab.0.left/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586498203" />
-    <state width="1493" height="337" key="GridCell.Tab.0.left/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607670058891" />
+    <state width="1493" height="415" key="GridCell.Tab.0.left/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607676494103" />
     <state width="1493" height="362" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1606121989609" />
-    <state width="1493" height="337" key="GridCell.Tab.0.right" timestamp="1607670058891">
+    <state width="1493" height="415" key="GridCell.Tab.0.right" timestamp="1607676494103">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1877" height="419" key="GridCell.Tab.0.right/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586498203" />
-    <state width="1493" height="337" key="GridCell.Tab.0.right/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607670058891" />
+    <state width="1493" height="415" key="GridCell.Tab.0.right/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607676494103" />
     <state width="1493" height="362" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1606121989610" />
-    <state width="1493" height="122" key="GridCell.Tab.1.bottom" timestamp="1607599990153">
+    <state width="1493" height="333" key="GridCell.Tab.1.bottom" timestamp="1607676183194">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1877" height="439" key="GridCell.Tab.1.bottom/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586470494" />
-    <state width="1493" height="122" key="GridCell.Tab.1.bottom/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607599990153" />
+    <state width="1493" height="333" key="GridCell.Tab.1.bottom/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607676183194" />
     <state width="1493" height="259" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1606121935730" />
-    <state width="1493" height="122" key="GridCell.Tab.1.center" timestamp="1607599990152">
+    <state width="1493" height="333" key="GridCell.Tab.1.center" timestamp="1607676183194">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1877" height="439" key="GridCell.Tab.1.center/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586470494" />
-    <state width="1493" height="122" key="GridCell.Tab.1.center/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607599990152" />
+    <state width="1493" height="333" key="GridCell.Tab.1.center/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607676183194" />
     <state width="1493" height="259" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1606121935730" />
-    <state width="1493" height="122" key="GridCell.Tab.1.left" timestamp="1607599990152">
+    <state width="1493" height="333" key="GridCell.Tab.1.left" timestamp="1607676183194">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1877" height="439" key="GridCell.Tab.1.left/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586470494" />
-    <state width="1493" height="122" key="GridCell.Tab.1.left/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607599990152" />
+    <state width="1493" height="333" key="GridCell.Tab.1.left/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607676183194" />
     <state width="1493" height="259" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1606121935730" />
-    <state width="1493" height="122" key="GridCell.Tab.1.right" timestamp="1607599990152">
+    <state width="1493" height="333" key="GridCell.Tab.1.right" timestamp="1607676183194">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1877" height="439" key="GridCell.Tab.1.right/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586470494" />
-    <state width="1493" height="122" key="GridCell.Tab.1.right/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607599990152" />
+    <state width="1493" height="333" key="GridCell.Tab.1.right/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607676183194" />
     <state width="1493" height="259" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1606121935730" />
+    <state x="574" y="163" key="RollbackChangesDialog" timestamp="1607678391679">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="574" y="163" key="RollbackChangesDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607678391679" />
     <state x="249" y="40" key="SettingsEditor" timestamp="1604132546534">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -588,28 +621,32 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="490" y="194" width="561" height="524" key="StructurePopup/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1603270255446" />
-    <state x="361" y="185" key="Vcs.Push.Dialog.v2" timestamp="1607657862019">
+    <state x="361" y="185" key="Vcs.Push.Dialog.v2" timestamp="1607678823856">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1469" y="94" key="Vcs.Push.Dialog.v2/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1607586550228" />
-    <state x="361" y="185" key="Vcs.Push.Dialog.v2/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607657862019" />
+    <state x="361" y="185" key="Vcs.Push.Dialog.v2/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607678823856" />
     <state x="361" y="185" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1604133959388" />
     <state x="93" y="133" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604755387041">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="93" y="133" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1601176963626" />
     <state x="93" y="133" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.40.1536.824@0.40.1536.824" timestamp="1604755387041" />
-    <state x="562" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605357950646">
+    <state x="562" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607676983256">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1217" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1604907973132" />
-    <state x="562" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1603708311822" />
+    <state x="562" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607676983256" />
     <state x="562" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1605357950646" />
     <state x="-1222" y="328" key="extract.method.dialog" timestamp="1605782499880">
       <screen x="-1920" y="-87" width="1920" height="1030" />
     </state>
     <state x="-1222" y="328" key="extract.method.dialog/-1920.-87.1920.1030/0.40.1536.824@-1920.-87.1920.1030" timestamp="1605782499880" />
     <state x="558" y="372" key="extract.method.dialog/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1605669753137" />
+    <state x="447" y="185" width="642" height="534" key="find.popup" timestamp="1607676676572">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="447" y="185" width="642" height="534" key="find.popup/-1920.-87.1920.1030/0.40.1536.824@0.40.1536.824" timestamp="1607676676572" />
     <state x="425" y="207" key="run.anything.popup" timestamp="1607597093922">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -833,6 +870,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A6ShortestPath/Dijkstra.java</url>
           <line>101</line>
           <option name="timeStamp" value="438" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A6ShortestPath/Floyed.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="444" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learn/dataStructure/D8Algorithm/A6ShortestPath/Floyed.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="445" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
