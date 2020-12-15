@@ -11,19 +11,39 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class HashMapTest {
     public static void main(String[] args) {
-        int number = 10;
+
+        Integer ii = 1212;
+        Integer ii2 = 1212;
+        System.out.println(ii == ii2);
+        System.out.println(ii.equals(ii2));
+
+
+        System.out.println(15&0);
+        //左移一位
+        int test = 10;
+        System.out.println("原始数二进制=" + Integer.toBinaryString(test));
+        test = test >> 2;
+        System.out.println(">>2为" + test + "---" + Integer.toBinaryString(test));
+        test = 3;
+        test = test >>> 2;
+        System.out.println(">>>2为" + test + "---" +  Integer.toBinaryString(test));
+
+
+        int number = 3;
         //原始数二进制
         System.out.println("原始数二进制=" + Integer.toBinaryString(number));
 
         number = number << 1;
+        System.out.println(number);
         //左移一位
+        System.out.println("<< 1=" + Integer.toBinaryString(number));
+        number = number >>> 1;
         System.out.println("<< 1=" + Integer.toBinaryString(number));
 
         number = number >> 1;
         //右移一位
         System.out.println(">> 1=" + Integer.toBinaryString(number));
 
-        number = number >>> 1;
         //右移一位
         int i = "fsfsfdsfsfsdfsdfdsfdsfsd".hashCode();
         System.out.println("key =" + Integer.toBinaryString(i));
@@ -34,21 +54,21 @@ public class HashMapTest {
 
         HashMap<Object, Object> objectObjectHashMap = new HashMap<>(32);
         System.out.println(objectObjectHashMap.toString());
-        objectObjectHashMap.put("dddd","ddd");
+        objectObjectHashMap.put("dddd", "ddd");
         objectObjectHashMap.get("dddd");
-        int n = 18 - 1;
-        n |= n >>> 1;
-        System.out.println(n);
-        n |= n >>> 2;
-        System.out.println(n);
-        n |= n >>> 4;
-        System.out.println(n);
-        n |= n >>> 8;
-        System.out.println(n);
-        n |= n >>> 16;
+        int n2 = 18 - 1;
+        n2 |= n2 >>> 1;
+        System.out.println(n2);
+        n2 |= n2 >>> 2;
+        System.out.println(n2);
+        n2 |= n2 >>> 4;
+        System.out.println(n2);
+        n2 |= n2 >>> 8;
+        System.out.println(n2);
+        n2 |= n2 >>> 16;
 
 //        System.out.println(Math.sqrt((double) n));
-        System.out.println("-----:" + (n+1));
+        System.out.println("-----:" + (n2 + 1));
 
 //
 //        10101000101100101100110001011011
@@ -56,11 +76,11 @@ public class HashMapTest {
 //        10101000101100100110010011101001
 
         ConcurrentHashMap<Object, Object> objectObjectConcurrentHashMap = new ConcurrentHashMap<>();
-        objectObjectConcurrentHashMap.put("dd","ddd");
+        objectObjectConcurrentHashMap.put("dd", "ddd");
     }
 
 
-    class Person{
+    class Person {
 
         @Override
         public int hashCode() {
