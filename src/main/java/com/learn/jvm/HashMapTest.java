@@ -12,6 +12,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public class HashMapTest {
     public static void main(String[] args) {
 
+        HashMap<Object, Object> objectObjectHashMap1 = new HashMap<>();
+        objectObjectHashMap1.put("qq","111");
+
+
+
+        System.out.println(tableSizeFor(10));
+
         Integer ii = 1212;
         Integer ii2 = 1212;
         System.out.println(ii == ii2);
@@ -87,5 +94,16 @@ public class HashMapTest {
 
             return 0000;
         }
+    }
+
+
+    static final int tableSizeFor(int cap) {
+        int n = cap - 1;
+        n |= n >>> 1;
+        n |= n >>> 2;
+        n |= n >>> 4;
+        n |= n >>> 8;
+        n |= n >>> 16;
+        return n + 1;
     }
 }

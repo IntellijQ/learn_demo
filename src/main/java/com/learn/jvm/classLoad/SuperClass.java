@@ -10,6 +10,14 @@ public class SuperClass {
     static {
         System.out.println("SuperClass init");
     }
-    public static int age = 10;
-    public static final String SEX = "男";
+    int score = 100;
+
+    public SuperClass() {
+        print();
+        score = 120;
+    }
+
+    public void print(){
+        System.out.println("Super score = " + score);
+    }
 }
