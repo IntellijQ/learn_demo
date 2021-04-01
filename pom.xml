@@ -25,6 +25,11 @@
             <optional>true</optional>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.lucee</groupId>-->
+<!--            <artifactId>cglib</artifactId>-->
+<!--            <version>2.2.2</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.openjdk.jol</groupId>
             <artifactId>jol-core</artifactId>
@@ -93,6 +98,12 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.dubbo.springboot</groupId>
+            <artifactId>spring-boot-starter-dubbo</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 

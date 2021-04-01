@@ -1,4 +1,4 @@
-package com.sp;
+package com.learn.functionCode;
 /**
  * @author yds
  * @title: Demo03Logger
@@ -12,23 +12,23 @@ public class Demo03Logger {
         String msgC = "Java";
 
         log1(2, () -> {
-            System.out.println("log1--Lambada 执行！");
             return msgA + msgB + msgC;
         });
 
-        log2(2, msgA + msgB + msgC);
+//        log2(2, msgA + msgB + msgC);
     }
 
     private static void log1(int level, MessageBuilder mb) {
+//        System.out.println("log1--Lambada 执行！" + mb.builderMessage());
         if (level == 1) {
             System.out.println("log1---leve1" + mb.builderMessage());
         }
     }
 
-    private static void log2(int level, String mgs) {
-        System.out.println("log2--Lambada 执行！" );
-        if (level == 1) {
-            System.out.println("log2--leve1" + mgs);
-        }
-    }
+//    private static void log2(int level, String mgs) {
+//        System.out.println("log2--Lambada 执行！" + mgs );
+//        if (level == 1) {
+//            System.out.println("log2--leve1" + mgs);
+//        }
+//    }
 }

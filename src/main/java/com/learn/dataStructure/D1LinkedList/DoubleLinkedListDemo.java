@@ -1,5 +1,7 @@
 package com.learn.dataStructure.D1LinkedList;
 
+import java.util.Stack;
+
 /**
  * @author yds
  * @title: DoubleLinkedList
@@ -40,6 +42,8 @@ class DoubleLinkedList{
 
 //    a b c
     public void del(Integer userId){
+
+        Stack<String> strings = new Stack<>();
         boolean flag = true;
         UserNode temp = head.next;
         while (flag){

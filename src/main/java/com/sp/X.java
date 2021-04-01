@@ -10,6 +10,8 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.weaving.LoadTimeWeaverAware;
 import org.springframework.instrument.classloading.LoadTimeWeaver;
 
+import javax.annotation.PostConstruct;
+
 /**
  * @author yds
  * @title: X
@@ -56,6 +58,17 @@ public class X implements InitializingBean /* BeanNameAware,  , BeanClassLoaderA
     public void afterPropertiesSet() throws Exception {
         System.out.println("InitializingBean...");
     }
+
+    public void myInit(){
+        System.out.println("myInit...");
+    }
+
+
+    @PostConstruct
+    public void myPostConstruct(){
+        System.out.println("myPostConstruct...");
+    }
+
 //
 //    private ClassLoader classLoader;
 //    @Override

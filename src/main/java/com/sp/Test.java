@@ -1,6 +1,8 @@
 package com.sp;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.AbstractRefreshableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -26,8 +28,7 @@ public class Test {
 //        applicationContext.refresh();
 
 
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicat.xml");
-
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicat.xml");
         System.out.println(applicationContext.getBean("x"));
     }
 }
