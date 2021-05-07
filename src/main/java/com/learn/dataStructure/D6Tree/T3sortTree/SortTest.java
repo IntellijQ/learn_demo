@@ -4,7 +4,7 @@ import com.learn.dataStructure.D6Tree.T1binaryTree.BNode;
 
 /**
  * @author yds
- * @title: SortTest
+ * @title: pick.SortTest
  * @description: 二叉排序树测试
  * @date 2020/11/20 17:46
  */

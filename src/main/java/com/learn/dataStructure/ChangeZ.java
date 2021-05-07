@@ -36,8 +36,10 @@ public class ChangeZ {
             rowList.get(currentRow).append(str.charAt(i));
             if(currentRow == row - 1){
                 iDownRow = false;
+//                currentRow += -1;
             }else if(currentRow == 0){
                 iDownRow = true;
+//                currentRow += 1;
             }
             currentRow += (iDownRow ? 1 : -1);
         }

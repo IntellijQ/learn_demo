@@ -21,9 +21,9 @@ public class Test_001_WaitNotify_LockSupport_ReetrantLock {
 
 
     public static void main(String[] args) {
-        park_unpark();
-//        wait_notify();
-//        reentrantLock();
+//        park_unpark();
+////        wait_notify();
+        reentrantLock();
 
     }
 
@@ -111,46 +111,81 @@ public class Test_001_WaitNotify_LockSupport_ReetrantLock {
 
     private static void reentrantLock(){
         Lock lock = new ReentrantLock();
-        Condition condition1 = lock.newCondition();
-        Condition condition2 = lock.newCondition();
+//        Condition condition1 = lock.newCondition();
+//        Condition condition2 = lock.newCondition();
 
         new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
                     lock.lock();
-                    for(int i = 0; i< b.length; i++){
-                        condition1.await();
-                        System.out.println(Thread.currentThread().getName() + ":" +b[i]);
-                        condition2.signal();
-                    }
-                    condition2.signal();
+//                    for(int i = 0; i< b.length; i++){
+//                        condition1.await();
+//                        System.out.println(Thread.currentThread().getName() + ":" +b[i]);
+//                        condition2.signal();
+//                    }
+//                    condition2.signal();
                 }catch (Exception ex){
 
                 }finally {
+                    try {
+                        Thread.sleep(10l);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     lock.unlock();
                 }
             }
-        }).start();
+        },"线程1").start();
 
         new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
                     lock.lock();
-                    for(int i = 0; i< a.length; i++){
-                        condition1.signal();
-                        System.out.println(Thread.currentThread().getName() + ":" +a[i]);
-                        condition2.await();
-                    }
-                    condition1.signal();
+//                    for(int i = 0; i< a.length; i++){
+//                        condition1.signal();
+//                        System.out.println(Thread.currentThread().getName() + ":" +a[i]);
+//                        condition2.await();
+//                    }
+//                    condition1.signal();
                 }catch (Exception ex){
 
                 }finally {
+                    try {
+                        Thread.sleep(10l);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     lock.unlock();
                 }
             }
-        }).start();
+        },"线程2").start();
+
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    lock.lock();
+//                    for(int i = 0; i< a.length; i++){
+//                        condition1.signal();
+//                        System.out.println(Thread.currentThread().getName() + ":" +a[i]);
+//                        condition2.await();
+//                    }
+//                    condition1.signal();
+                }catch (Exception ex){
+
+                }finally {
+                    try {
+                        Thread.sleep(10l);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    lock.unlock();
+                }
+            }
+        },"线程3").start();
     }
 
 }

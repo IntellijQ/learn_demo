@@ -1,6 +1,7 @@
 package com.sp;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.AbstractRefreshableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -27,8 +28,19 @@ public class Test {
 //        applicationContext.register(Appconfig.class);
 //        applicationContext.refresh();
 
-
+//
+        Object o = new Object();
+        System.out.println(o.hashCode());
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicat.xml");
-        System.out.println(applicationContext.getBean("x"));
+        X x = (X)applicationContext.getBean("x");
+        System.out.println(x);
+        x.test();
+        System.out.println(x);
+
+
+//        String path = "999999";
+//        int i = path.lastIndexOf('/');
+//        System.out.println(i);
+//        System.out.println(path.substring(0, i));
     }
 }

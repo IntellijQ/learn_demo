@@ -2,18 +2,53 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
 <!--    <context:annotation-config />-->
 
     <bean id="x" class="com.sp.X" init-method="myInit">
-        <property name="myXName" value="dddd"></property>
+        <property name="myXName" value="jjjjj"></property>
 <!--        <property name="y" ref="y"></property>-->
     </bean>
+
+
+<!--    <dubbo:application name="hello-world-app"  />-->
+<!--    <dubbo:service interface="com.sp.ITestService" ref="demoService" />-->
+<!--    <bean id="demoService" class="com.sp.ITestServiceImpl" />-->
+
+
+<!--    <bean id="x" class="com.sp.X" init-method="myInit">-->
+<!--        <constructor-arg name = "myName" value="ddd"></constructor-arg>-->
+<!--    </bean>-->
+
 <!--    <bean class="com.sp.MyBeanFactoryPostProcessor" id="myBeanFactoryPostProcessor"/>-->
 
-    <!--    <bean id="y" class="com.sp.Y">-->
-<!--        <property name="x" ref="x"></property>-->
-<!--    </bean>-->
+<!--        <bean id="y" class="com.sp.Y">-->
+<!--            <property name="x" ref="x"></property>-->
+<!--         </bean>-->
+
+    <bean id="testAspectj" class="com.sp.TestAspectj"></bean>
+    <aop:config>
+        <!--定义切面-->
+        <aop:aspect ref="testAspectj">
+             <!--定义切点-->
+             <aop:pointcut id="action" expression="execution(* com.sp.X.test(..))"/>
+             <!-- 声明前置通知 (在切点方法被执行前调用)-->
+             <aop:before method="beforea" pointcut-ref="action"/>
+             <!-- 声明后置通知 (在切点方法被执行后调用)-->
+             <aop:after method="aftera" pointcut-ref="action"/>
+        </aop:aspect>
+    </aop:config>
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
 </beans>

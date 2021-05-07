@@ -19,7 +19,8 @@
 //        String[] beanDefinitionNames = beanFactory.getBeanDefinitionNames();
 //        for (int i = 0; i < beanDefinitionNames.length; i++) {
 //            BeanDefinition beanDefinition = beanFactory.getBeanDefinition(beanDefinitionNames[i]);
-//            System.out.println("BeanFactoryPostProcessor 查询BeanDefinition信息：" + beanDefinition);
+//            beanDefinition.setBeanClassName("yyy");
+//            System.out.println("在自定义的BeanFactoryPostProcessor中，可以根据情况修改BeanDefinition信息：" + beanDefinition);
 //        }
 //    }
 //
