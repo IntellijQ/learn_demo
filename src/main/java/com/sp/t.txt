@@ -1,0 +1,78 @@
+Classfile /D:/jiufupro/jijin/learn_demo/src/main/java/com/sp/TestString.class
+  Last modified 2021-4-20; size 470 bytes
+  MD5 checksum 4b4a9fe5f12ceac6a96d158d6cc6bd06
+  Compiled from "TestString.java"
+public class com.sp.TestString
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #8.#18         // java/lang/Object."<init>":()V
+   #2 = String             #19            // 999999
+   #3 = Fieldref           #7.#20         // com/sp/TestString.path:Ljava/lang/String;
+   #4 = String             #9             // path
+   #5 = Fieldref           #21.#22        // java/lang/System.out:Ljava/io/PrintStream;
+   #6 = Methodref          #23.#24        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #7 = Class              #25            // com/sp/TestString
+   #8 = Class              #26            // java/lang/Object
+   #9 = Utf8               path
+  #10 = Utf8               Ljava/lang/String;
+  #11 = Utf8               <init>
+  #12 = Utf8               ()V
+  #13 = Utf8               Code
+  #14 = Utf8               LineNumberTable
+  #15 = Utf8               methoda
+  #16 = Utf8               SourceFile
+  #17 = Utf8               TestString.java
+  #18 = NameAndType        #11:#12        // "<init>":()V
+  #19 = Utf8               999999
+  #20 = NameAndType        #9:#10         // path:Ljava/lang/String;
+  #21 = Class              #27            // java/lang/System
+  #22 = NameAndType        #28:#29        // out:Ljava/io/PrintStream;
+  #23 = Class              #30            // java/io/PrintStream
+  #24 = NameAndType        #31:#32        // println:(Ljava/lang/String;)V
+  #25 = Utf8               com/sp/TestString
+  #26 = Utf8               java/lang/Object
+  #27 = Utf8               java/lang/System
+  #28 = Utf8               out
+  #29 = Utf8               Ljava/io/PrintStream;
+  #30 = Utf8               java/io/PrintStream
+  #31 = Utf8               println
+  #32 = Utf8               (Ljava/lang/String;)V
+{
+  java.lang.String path;
+    descriptor: Ljava/lang/String;
+    flags:
+
+  public com.sp.TestString();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: ldc           #2                  // String 999999
+         7: putfield      #3                  // Field path:Ljava/lang/String;
+        10: return
+      LineNumberTable:
+        line 9: 0
+        line 11: 4
+
+  public void methoda();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: ldc           #4                  // String path
+         2: astore_1
+         3: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         6: aload_1
+         7: invokevirtual #6                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        10: return
+      LineNumberTable:
+        line 14: 0
+        line 15: 3
+        line 16: 10
+}
+SourceFile: "TestString.java"

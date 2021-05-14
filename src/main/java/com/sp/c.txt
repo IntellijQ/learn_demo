@@ -1,0 +1,5 @@
+Compiled from "TestString.java"
+public class com.sp.TestString {
+  java.lang.String path;
+  public com.sp.TestString();
+}
